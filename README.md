@@ -1,2 +1,3 @@
 # 0xtaipoian.github.io
-My little personal blog
+
+I am 0xtaipoian, a citizen of a decentralized city, and this is my little personal blog.
