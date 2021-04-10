@@ -5,7 +5,7 @@ import { PostPreview } from './post-preview';
 
 export const MoreStories: React.FC<BoxProps & { posts: Post[] }> = ({ posts, ...props }) => (
   <Box as="section" {...props}>
-    <Heading as="h2" fontSize={[6, 7, 7]} mb={4} sx={{ letterSpacing: '-.04em' }}>
+    <Heading as="h2" fontSize={[6, 7, 7]} letterSpacing="tighter" mb={4}>
       More Stories
     </Heading>
     <Box
