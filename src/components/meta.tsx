@@ -16,9 +16,30 @@ export const Meta: React.FC = () => (
     <meta content="#000" name="theme-color" />
     <link href="/feed.xml" rel="alternate" type="application/rss+xml" />
     <meta
-      content="I am 0xtaipoian, a citizen of a decentralized city, and this is my little personal blog."
+      content="I am 0xtaipoian, an anon developer, and this is my little personal blog."
       name="description"
     />
     <meta content="/icons/icon-512x512.png" property="og:image" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGWXB3NBPG" />
+    <script
+      /* eslint-disable react/no-danger */
+      dangerouslySetInnerHTML={{
+        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VGWXB3NBPG');
+        `,
+      }}
+    />
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bc0d458fc5d2b0a9fde01cfad/4ecb172472c3fa9bfa40ebee2.js");
+        `,
+      }}
+      id="mcjs"
+      /* eslint-enable react/no-danger */
+    />
   </Head>
 );
