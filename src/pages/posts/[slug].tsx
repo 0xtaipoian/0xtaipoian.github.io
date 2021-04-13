@@ -29,7 +29,7 @@ const PostPage: NextPage<PostPageProps> = ({ post, preview }) => {
         ) : (
           <Box as="article" mb={4}>
             <Head>
-              <title>{post.title} | Next.js Blog Example with Forestry</title>
+              <title>{post.title} | Pager Universe</title>
               <meta content={post.ogImage.url} property="og:image" />
             </Head>
             <PostHeader

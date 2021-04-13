@@ -4,8 +4,8 @@ export const preset = {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#07c',
-    secondary: '#30c',
+    primary: '#ff7166',
+    secondary: '#000',
     muted: '#f6f6f9',
     gray: '#dddddf',
     highlight: 'hsla(205, 100%, 40%, 0.125)',

@@ -6,7 +6,6 @@ export * from './date-formatter';
 export * from './footer';
 export * from './header';
 export * from './hero-post';
-export * from './intro';
 export * from './layout';
 export * from './meta';
 export * from './more-stories';

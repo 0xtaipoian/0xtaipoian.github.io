@@ -10,6 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@rebass/forms": "4.0.6",
     "@sentry/node": "6.2.5",
     "@sentry/react": "6.2.5",
     "date-fns": "2.19.0",
@@ -23,6 +24,8 @@
     "remark-html": "13.0.1",
     "remark": "13.0.0",
     "styled-components": "5.2.3",
+    "styled-icons": "10.33.0",
+    "styled-normalize": "8.0.7",
     "terser-webpack-plugin": "5.1.1"
   },
   "devDependencies": {

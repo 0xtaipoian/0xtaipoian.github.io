@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import { Container, HeroPost, Intro, Layout, MoreStories } from '../components';
+import { Container, Header, HeroPost, Layout, MoreStories } from '../components';
 import { getAllPosts } from '../lib/api';
 
 export default function Index({ allPosts }) {
@@ -11,10 +11,10 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with Forestry</title>
+          <title>Pager&apos;s Universe</title>
         </Head>
         <Container>
-          <Intro />
+          <Header />
           {heroPost && (
             <HeroPost
               author={heroPost.author}

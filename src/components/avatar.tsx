@@ -2,14 +2,23 @@ import React from 'react';
 import { Box, Flex, FlexProps, Image, Text } from 'rebass/styled-components';
 import { Author } from '../interfaces/author';
 
-export type AvatarProps = Author & FlexProps;
+export interface AvatarProps extends Author, Omit<FlexProps, 'name'> {
+  size?: string | number | Array<string | number>;
+  fontSize?: string | number | Array<string | number>;
+}
 
-export const Avatar: React.FC<AvatarProps> = ({ name, picture }) => (
+export const Avatar: React.FC<AvatarProps> = ({ name, picture, size = '3rem', fontSize = 3 }) => (
   <Flex alignItems="center" flexDirection="row" justifyContent="left">
     <Box>
-      <Image alt={name} height="3rem" src={picture} sx={{ borderRadius: 'circle' }} width="3rem" />
+      <Image
+        alt={name}
+        height={size}
+        src={picture}
+        sx={{ borderRadius: 'circle', verticalAlign: 'top' }}
+        width={size}
+      />
     </Box>
-    <Text fontSize={3} ml={2}>
+    <Text fontSize={fontSize} ml={[2, 3, 3]}>
       <b>{name}</b>
     </Text>
   </Flex>

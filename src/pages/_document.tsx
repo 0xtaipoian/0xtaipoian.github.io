@@ -1,11 +1,19 @@
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components';
+import { normalize } from 'styled-normalize';
+import theme from '../theme';
 
 const AppGlobalStyle = createGlobalStyle`
+  ${normalize}
+
   button, html, input, select, textarea {
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;
     font-size: 1.125rem;
+  }
+
+  input, button {
+    outline: none;
   }
 
   *, *:before, *:after {
@@ -19,7 +27,7 @@ const AppGlobalStyle = createGlobalStyle`
     text-decoration: none;
 
     &:hover {
-      color: #7928ca!important;
+      color: ${theme.colors.primary}!important;
     }
   }
 
