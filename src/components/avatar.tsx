@@ -7,8 +7,14 @@ export interface AvatarProps extends Author, Omit<FlexProps, 'name'> {
   fontSize?: string | number | Array<string | number>;
 }
 
-export const Avatar: React.FC<AvatarProps> = ({ name, picture, size = '3rem', fontSize = 3 }) => (
-  <Flex alignItems="center" flexDirection="row" justifyContent="left">
+export const Avatar: React.FC<AvatarProps> = ({
+  name,
+  picture,
+  size = '3rem',
+  fontSize = 3,
+  ...props
+}) => (
+  <Flex alignItems="center" flexDirection="row" justifyContent="left" {...props}>
     <Box>
       <Image
         alt={name}

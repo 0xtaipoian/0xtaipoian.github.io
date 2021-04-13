@@ -38,7 +38,7 @@ const PostPage: NextPage<PostPageProps> = ({ post, preview }) => {
               date={post.date}
               title={post.title}
             />
-            <PostBody content={post.content} />
+            <PostBody content={post.content} tags={post.tags} />
           </Box>
         )}
       </Container>
@@ -52,6 +52,7 @@ export async function getStaticProps({ params }) {
     'date',
     'slug',
     'author',
+    'tags',
     'content',
     'ogImage',
     'coverImage',

@@ -1,4 +1,4 @@
-import { Input } from '@rebass/forms';
+import { Input } from '@rebass/forms/styled-components';
 import React from 'react';
 import { Box, Button, Flex } from 'rebass/styled-components';
 
@@ -18,7 +18,6 @@ export const SubscribeBox = () => (
           <Input
             className="email"
             defaultValue=""
-            id="mce-EMAIL"
             name="EMAIL"
             placeholder="email address"
             required

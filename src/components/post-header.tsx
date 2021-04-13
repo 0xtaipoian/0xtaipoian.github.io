@@ -18,14 +18,14 @@ export const PostHeader: React.FC<PostHeaderProps> = ({
   <Flex flexDirection="column" {...props}>
     <PostTitle mb={4}>{title}</PostTitle>
     <Box display={['none', 'block', 'block']} mb={4}>
-      <Avatar name={author.name} picture={author.picture} />
+      <Avatar mb={3} name={author.name} picture={author.picture} />
     </Box>
     <Box mb={[4, 5, 5]}>
       <CoverImage src={coverImage} title={title} />
     </Box>
     <Box>
       <Box display={['block', 'none', 'none']} mb={3}>
-        <Avatar name={author.name} picture={author.picture} />
+        <Avatar mb={3} name={author.name} picture={author.picture} />
       </Box>
       <Box>
         <DateFormatter dateString={date} />

@@ -4,7 +4,7 @@ export const preset = {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#ff7166',
+    primary: '#ff5446',
     secondary: '#000',
     muted: '#f6f6f9',
     gray: '#dddddf',

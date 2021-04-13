@@ -1,5 +1,5 @@
 import {
-  Github as GihubIcon,
+  Github as GithubIcon,
   Instagram as InstagramIcon,
   Twitter as TwitterIcon,
 } from '@styled-icons/boxicons-logos';
@@ -16,7 +16,7 @@ const StyledList = styled.ul`
 
   li {
     float: left;
-    margin-right: 6px;
+    margin-right: 12px;
   }
 
   &:after {
@@ -52,7 +52,7 @@ export const Footer: React.FC<BoxProps> = () => (
               <Link href="https://0xtaipoian.github.io" target="_blank">
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a>
-                  <LinkIcon size="32px" />
+                  <LinkIcon size="36px" />
                 </a>
                 {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </Link>
@@ -61,7 +61,7 @@ export const Footer: React.FC<BoxProps> = () => (
               <Link href="https://github.com/0xtaipoian" target="_blank">
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a>
-                  <GihubIcon size="32px" />
+                  <GithubIcon size="36px" />
                 </a>
                 {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </Link>
@@ -70,7 +70,7 @@ export const Footer: React.FC<BoxProps> = () => (
               <Link href="https://twitter.com/0xtaipoian" target="_blank">
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a>
-                  <TwitterIcon size="32px" />
+                  <TwitterIcon size="36px" />
                 </a>
                 {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </Link>
@@ -79,7 +79,7 @@ export const Footer: React.FC<BoxProps> = () => (
               <Link href="https://www.instagram.com/0xtaipoian/">
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a>
-                  <InstagramIcon size="32px" />
+                  <InstagramIcon size="36px" />
                 </a>
                 {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </Link>

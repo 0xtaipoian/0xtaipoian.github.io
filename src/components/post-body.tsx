@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box, BoxProps } from 'rebass/styled-components';
 import styled from 'styled-components';
+import { Tags } from './tags';
 
 export interface PostBodyProps extends BoxProps {
   content: string;
+  tags?: string[];
 }
 
 const PostBodyContainer = styled(Box)`
@@ -25,11 +27,20 @@ const PostBodyContainer = styled(Box)`
     margin-bottom: 2rem;
     margin-top: 2.5rem;
   }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 `;
 
-export const PostBody: React.FC<PostBodyProps> = ({ content, ...props }) => (
+export const PostBody: React.FC<PostBodyProps> = ({ content, tags, ...props }) => (
   <PostBodyContainer {...props}>
     {/* eslint-disable-next-line react/no-danger */}
-    <div dangerouslySetInnerHTML={{ __html: content }} />
+    <Box dangerouslySetInnerHTML={{ __html: content }} mb={[4, 5, 5]} />
+    <Tags tags={tags} />
   </PostBodyContainer>
 );
