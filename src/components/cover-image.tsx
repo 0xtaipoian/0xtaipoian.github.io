@@ -37,6 +37,7 @@ export const CoverImage: React.FC<CoverImageProps> = ({ title, src, slug, ...pro
           border: 'none',
           boxSizing: 'border-box',
           margin: 'auto',
+          objectFit: 'cover',
         }}
         width="0px"
       />
