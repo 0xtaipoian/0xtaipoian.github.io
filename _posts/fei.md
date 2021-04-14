@@ -18,7 +18,7 @@ ogImage:
 
 因當初見佢個誘因機制幾有趣，用PCV（Protocol Controlled Valie)控制，就當時價格調整誘因，當價格低於一鎂時就提高買入獎勵，加大賣出懲罰，純用誘因嚟控制價格。
 
-![/assets/blog/fei/direct-incentives](/assets/blog/fei/direct-incentives)
+![/assets/blog/fei/direct-incentives.png](/assets/blog/fei/direct-incentives.png)
 
 而且有一推大名機構作早其投資者，令項目創始活動所籌得金價超出團隊預期目標一大截，超過 $1B 嘅 $FEI 應運而生，所以小 ape 我都 aped，加入咗 Genesis Group，得到空投 $FEI 隱定幣同 $TRIBE 治理幣 🤩。
 
