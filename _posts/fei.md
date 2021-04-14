@@ -4,7 +4,7 @@ tags:
 - fei
 - ethereum
 title: FEI = Fail ?
-excerpt: 因當初見佢個誘因機制幾有趣，用PCV（Protocol Controlled Valie)控制，就當時價格調整誘因，當價格低於一鎂時就提高買入獎勵，加大賣出懲罰，純用誘因嚟控制價格。
+excerpt: 因當初見佢個誘因機制幾有趣，用PCV（Protocol Controlled Value)控制，就當時價格調整誘因，當價格低於一鎂時就提高買入獎勵，加大賣出懲罰，純用誘因嚟控制價格。
 coverImage: "/assets/blog/fei/cover.png"
 date: 2021-04-15T16:00:00Z
 author:
@@ -16,7 +16,7 @@ ogImage:
 ---
 # FEI = Fail ?
 
-因當初見佢個誘因機制幾有趣，用PCV（Protocol Controlled Valie)控制，就當時價格調整誘因，當價格低於一鎂時就提高買入獎勵，加大賣出懲罰，純用誘因嚟控制價格。
+因當初見佢個誘因機制幾有趣，用PCV（Protocol Controlled Value)控制，就當時價格調整誘因，當價格低於一鎂時就提高買入獎勵，加大賣出懲罰，純用誘因嚟控制價格。
 
 ![/assets/blog/fei/direct-incentives.png](/assets/blog/fei/direct-incentives.png)
 
