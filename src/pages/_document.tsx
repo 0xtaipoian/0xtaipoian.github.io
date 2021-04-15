@@ -1,7 +1,8 @@
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import Document, { DocumentContext, Html, Main, NextScript } from 'next/document';
 import React from 'react';
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import Head from '../components/document-head';
 import theme from '../theme';
 
 const AppGlobalStyle = createGlobalStyle`

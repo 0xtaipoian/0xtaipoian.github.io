@@ -32,7 +32,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
     // convert to date string
     if (items[field] instanceof Date) {
-      items[field] = items[field].toISOString();
+      items[field] = items[field].toISOString()
     }
   })
 

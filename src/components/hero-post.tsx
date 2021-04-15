@@ -18,7 +18,12 @@ export const HeroPost: React.FC<HeroPostProps> = ({
 }) => (
   <Flex as="section" mb={4} {...props} flexDirection="row" flexWrap="wrap">
     <Box mb={[3, 4]} width={[1, 1, 1, 2 / 3]}>
-      <CoverImage slug={slug} src={coverImage} title={title} />
+      <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a>
+          <CoverImage slug={slug} src={coverImage} title={title} />
+        </a>
+      </Link>
     </Box>
     <Box mb={[3, 4, 6]} pl={[0, 0, 4]} width={[1, 1, 1, 1 / 3]}>
       <Box>
