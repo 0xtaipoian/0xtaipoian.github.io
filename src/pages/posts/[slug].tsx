@@ -33,6 +33,8 @@ const PostPage: NextPage<PostPageProps> = ({ post, preview }) => {
               <meta content={post.ogImage.url} property="og:image" />
               <meta content={`${post.title} | Pager Universe`} property="og:title" />
               <meta content={post.excerpt} property="og:description" />
+              <meta content={post.excerpt} name="description" />
+              <meta content={post.tags.join(', ')} name="keywords" />
             </Head>
             <PostHeader
               author={post.author}

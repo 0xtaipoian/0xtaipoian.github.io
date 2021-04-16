@@ -35,6 +35,7 @@ export const Meta: React.FC<MetaProps> = ({ lang = 'en' }) => (
       content="I am Pager, an anon developer, and this is my little personal blog."
       name="description"
     />
+    <meta content="/icons/icon-512x512.png" property="og:image" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGWXB3NBPG" />
     <script
       /* eslint-disable react/no-danger */
