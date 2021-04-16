@@ -5,16 +5,11 @@ const prettier = require('prettier');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 async function sitemapXML() {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
+  const prettierConfig = await prettier.resolveConfig('./.prettierrc');
 
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
   const pages = await globby([
-    'content/posts/',
-    'pages/*.js',
-    '!pages/index.js',
-    '!pages/_*.js',
-    '!pages/api',
-    '!pages/sitemap.xml.js'
+    'out/posts/'
   ]);
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
@@ -27,24 +22,21 @@ async function sitemapXML() {
             ${pages
               .map((page) => {
                 const path = page
-                  .replace('content/','')
-                  .replace("posts/", 'post/')
-                  .replace('pages/', '')
-                  .replace('.js', '')
-                  .replace('.md', '');
+                  .replace('out/','')
+                  .replace('.html', '');
                 // console.log(page); // Use this to confirm export of the sitemap
                 const spath = path.split('/');
                 let spathfin;
 
                 if (spath.length === 1){
-                  [spathfin] = spath
+                  [spathfin] = spath;
                 } else {
-                  spathfin = spath.slice(0, spath.length -1).join('/')
+                  spathfin = spath.join('/');
                 }
 
                 const route = spathfin === '/index' ? '' : spathfin;
 
-                // console.log(page, route);
+                console.log(page, route);
 
                 return `
                         <url>
@@ -64,7 +56,7 @@ async function sitemapXML() {
     parser: 'html'
   });
 
-  fs.writeFileSync('public/sitemap.xml', formatted);
+  fs.writeFileSync('out/sitemap.xml', formatted);
 
   return formatted;
 }
